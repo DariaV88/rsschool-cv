@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CV</title>
+    <link
+      href="https://fonts.googleapis.com/css?family=Cabin:regular,500,600,700,italic,500italic,600italic,700italic"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="sections">
+        <div class="left-section">
+          <header class="header">
+            <div class="profile">
+              <div class="profile__img">
+                <img src="./1.jpg" alt="Profile image" class="img" />
+              </div>
+              <div class="profile__title">Varlamova Darya</div>
+              <div class="profile__text">FRONTEND DEVELOPER</div>
+            </div>
+          </header>
+          <div class="contacts">
+            <div class="title">
+              <h2 class="title__text">CONTACT INFO</h2>
+            </div>
+            <ul class="contacts__items">
+              <li class="contacts__item item">
+                <img
+                  src="./svg/telephone-phone-svgrepo-com.svg"
+                  alt="tel"
+                  class="icon"
+                />
+                <a href="tel:79965360000" class="item-link">+7 996 536 00 00</a>
+              </li>
+              <li class="contacts__item item">
+                <img
+                  src="./svg/gmail-svgrepo-com.svg"
+                  alt="mail"
+                  class="icon"
+                />
+                <a href="mailto:dariav3888@gmail.com" class="item-link"
+                  >dariav3888@gmail.com</a
+                >
+              </li>
+              <li class="contacts__item item">
+                <img
+                  src="./svg/github-142-svgrepo-com.svg"
+                  alt="github"
+                  class="icon"
+                />
+                <a href="https://github.com/DariaV88" class="item-link"
+                  >DariaV88</a
+                >
+              </li>
+              <li class="contacts__item item">
+                <img
+                  src="./svg/telegram-svgrepo-com.svg"
+                  alt="telegram"
+                  class="icon"
+                />
+                <a href="#" class="item-link">@KoreanD8</a>
+              </li>
+            </ul>
+          </div>
+          <div class="skills">
+            <div class="title">
+              <h2 class="title__text">SKILLS</h2>
+            </div>
+            <ul class="contacts__items">
+              <li class="contacts__item item">
+                <img
+                  src="./svg/html-5-svgrepo-com.svg"
+                  alt="html"
+                  class="icon"
+                />HTML
+              </li>
+              <li class="contacts__item item">
+                <img
+                  src="./svg/css-3-svgrepo-com.svg"
+                  alt="css"
+                  class="icon"
+                />CSS
+              </li>
+              <li class="contacts__item item">
+                <img src="./svg/js-svgrepo-com.svg" alt="js" class="icon" />JS
+              </li>
+              <li class="contacts__item item">
+                <img
+                  src="./svg/react-1-logo-svgrepo-com.svg"
+                  alt="react"
+                  class="icon"
+                />React
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="right-section">
+          <div class="inner">
+            <nav>
+              <div class="block__about block">
+                <h2 class="block__title">About myself</h2>
+                <h3 class="block__text">
+                  For the last 2 years I have been studying at the university
+                  and working as a translator from Korean. After university
+                  lectures on creating a website, I became interested in web
+                  development and began to study html, css and js on my own from
+                  books and videos on YouTube.
+                </h3>
+              </div>
+              <div class="block__education block">
+                <h2 class="block__title">Education</h2>
+                <p class="block__text-education">
+                  Kuban State University <br />Faculty of Economics <br />
+                  Years: 2021-2025
+                </p>
+              </div>
+              <div class="block__languages block">
+                <div class="title">
+                  <h2 class="block__title">Languages</h2>
+                </div>
+                <ul>
+                  <li>
+                    <span class="text">English</span>
+                    <div class="percent">
+                      <div class="percent__filled" style="width: 65%"></div>
+                    </div>
+                  </li>
+                  <li>
+                    <span class="text">Russian</span>
+                    <div class="percent">
+                      <div class="percent__filled" style="width: 95%"></div>
+                    </div>
+                  </li>
+                  <li>
+                    <span class="text">Korean</span>
+                    <div class="percent">
+                      <div class="percent__filled" style="width: 75%"></div>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+              <div class="block__code">
+                <h2 class="block__title">Code example</h2>
+                <h3 class="block__text">
+                  Find The Parity Outlier from CODEWARS: You are given an array
+                  (which will have a length of at least 3, but could be very
+                  large) containing integers. The array is either entirely
+                  comprised of odd integers or entirely comprised of even
+                  integers except for a single integer N. Write a method that
+                  takes the array as an argument and returns this "outlier" N.
+                </h3>
+                <div class="code">
+                  <code
+                    >function findOutlier(int) { <br />
+                    const f = int.filter((a) => a % 2 == 0) <br />
+                    if (f.length == 1) return f[0] <br />
+                    else return int.filter((a) => a % 2 != 0)[0] <br />}</code
+                  >
+                </div>
+              </div>
+            </nav>
+          </div>
+        </div>
+      </div>
+      <footer class="footer">
+        <div class="footer__inner">
+          <a href="" class="link-github">
+            <img
+              src="./svg/github-142-svgrepo-com.svg"
+              alt="git footer"
+              class="icon"
+            />
+            <p>Visit my GitHub</p>
+          </a>
+          <p>© 2023</p>
+          <a href="" class="link-rs">
+            <img
+              src="https://rs.school/images/rs_school.svg"
+              alt="rs"
+              class="icon-rs"
+            />
+          </a>
+        </div>
+      </footer>
+    </div>
+  </body>
+</html>
