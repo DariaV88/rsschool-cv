@@ -1,0 +1,80 @@
+* {
+  box-sizing: border-box;
+  left: 0;
+  top: 0;
+  padding: 0;
+  margin: 0;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+ul,
+ul li {
+  list-style: none;
+}
+
+body {
+  font-family: Inter;
+  font-size: 20px;
+  font-weight: 400;
+}
+
+.container {
+  max-width: 1440px;
+  margin: 0 auto;
+}
+
+/* ____________________________________________________________________ */
+
+.header {
+  min-height: 90px;
+}
+
+.header__inner {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: #ffffff;
+  background: #0c0c0e;
+}
+
+.menu__list {
+  display: flex;
+  justify-content: space-between;
+}
+
+.icon {
+  margin: 34px 26px 29px 40px;
+}
+
+.menu__item:not(:last-child) {
+  margin-right: 30px;
+}
+
+.header__right {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header__logo {
+  font-family: Forum;
+  margin-left: 20px;
+  font-size: 30px;
+  font-weight: 400;
+  line-height: 50px;
+  letter-spacing: 0.02em;
+  text-align: left;
+}
+
+/* _________________________________________________________ */
+
+main {
+  background-image: url();
+  background-repeat: no-repeat;
+  background-position: top center;
+  background-size: cover;
+}
