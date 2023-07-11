@@ -72,9 +72,87 @@ body {
 
 /* _________________________________________________________ */
 
+.welcome {
+  margin-bottom: 20px;
+}
+
+/* __________________________________________________________ */
+
 main {
   background-image: url();
   background-repeat: no-repeat;
   background-position: top center;
   background-size: cover;
+}
+
+.textblock {
+  text-align: center;
+}
+
+.title {
+  color: #0c0c0e;
+  font-family: Forum;
+  font-size: 40px;
+  line-height: 40px;
+  letter-spacing: 2px;
+  font-weight: 400;
+  margin-bottom: 10px;
+  /* border-bottom: 1px solid #0c0c0e; придумать что-нибудь с чертой */
+}
+
+.subtitle {
+  color: #000000;
+  margin-top: 50px;
+  font-family: Inter;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 40px;
+  letter-spacing: 0em;
+}
+
+/* ____________________________________________________________ */
+
+.about__slider {
+  margin: 20px 20px 40px 20px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.buttons {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.slider-buttom {
+  width: 16px;
+  height: 16px;
+  background: #000000;
+  border-radius: 50px;
+  border: none;
+}
+/* сделать что-то с кнопками!!! */
+
+.slider-buttom--active {
+  background: #bb945f;
+}
+
+/* ________________________________________________________________ */
+
+.favorites__title {
+  text-align: center;
+}
+
+/* что-то сделать с расстояние у радиокнопок */
+.favorites__menu-item {
+  padding-left: 10px;
+}
+
+.favorites__menu-text {
+  margin-bottom: 40px;
+}
+
+.favorites__menu-list {
+  max-width: 700px;
+  display: flex;
+  justify-content: space-between;
 }

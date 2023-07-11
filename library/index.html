@@ -15,8 +15,8 @@
     />
   </head>
   <body>
-    <header class="header">
-      <div class="container">
+    <div class="container">
+      <header class="header">
         <div class="header__inner">
           <div class="header__left">
             <a href="" class="header__logo">Brooklyn Public Library</a>
@@ -48,15 +48,52 @@
             </div>
           </div>
         </div>
-      </div>
-    </header>
-    <main class="main">
-      <section class="welcome">
-        <div class="container">
+      </header>
+      <main class="main">
+        <section class="welcome">
           <img src="./assets/Welcome.jpg" alt="" />
-        </div>
-      </section>
-    </main>
-    <footer class="footer"></footer>
+        </section>
+        <section class="about">
+          <div class="about__textblock textblock">
+            <h2 class="about__title title">About</h2>
+            <div class="about__subtitle subtitle">
+              The Brooklyn Library is a free workspace, a large number of books
+              and a cozy coffee shop inside
+            </div>
+          </div>
+          <div class="about__slider">
+            <img src="./assets/slider1.jpg" alt="" class="slider img1" />
+            <img src="./assets/slider2.jpg" alt="" class="slider img2" />
+            <img src="./assets/slider3.jpg" alt="" class="slider img3" />
+          </div>
+          <div class="buttons">
+            <button class="slider-buttom slider-buttom--active"></button>
+            <button class="slider-buttom"></button>
+            <button class="slider-buttom"></button>
+          </div>
+        </section>
+        <section class="favorites">
+          <div class="favorites__textblock">
+            <h2 class="favorites__title title">Favorites</h2>
+            <h3 class="favorites__menu-text">Pick favorites of season</h3>
+            <div class="favorites__menu-list">
+              <label>
+                <input type="radio" class="favorites__menu-item" />Winter
+              </label>
+              <label>
+                <input type="radio" class="favorites__menu-item" />Spring
+              </label>
+              <label>
+                <input type="radio" class="favorites__menu-item" />Summer
+              </label>
+              <label>
+                <input type="radio" class="favorites__menu-item" />Autumn
+              </label>
+            </div>
+          </div>
+        </section>
+      </main>
+      <footer class="footer"></footer>
+    </div>
   </body>
 </html>
