@@ -22,6 +22,14 @@ body {
   font-weight: 400;
 }
 
+h1,
+h2,
+h3 {
+  font-weight: inherit;
+  font-size: inherit;
+  font-family: inherit;
+}
+
 .container {
   max-width: 1440px;
   margin: 0 auto;
@@ -155,4 +163,79 @@ main {
   max-width: 700px;
   display: flex;
   justify-content: space-between;
+  margin-bottom: 40px;
 }
+
+.favorites__books {
+  display: flex;
+  justify-content: space-between;
+}
+
+.favorites__bookblock {
+  width: 550px;
+  height: 555px;
+  border: 1px solid #000000;
+  position: relative;
+}
+
+.bookblock__image {
+  position: absolute;
+  left: 75%;
+  top: 46%;
+}
+
+.bookblock__title {
+  font-family: Forum;
+  line-height: 40px;
+  letter-spacing: 2px;
+  position: relative;
+}
+
+.bookblock__title::after {
+  content: " ";
+  background: #bb945f;
+  height: 1.3px;
+  width: 65px;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+}
+
+.bookblock__name {
+  font-family: Inter;
+  font-size: 15px;
+  font-weight: 700;
+  line-height: 40px;
+  letter-spacing: 2px;
+  margin-bottom: 20px;
+}
+
+.bookname {
+  text-transform: uppercase;
+}
+
+.bookblock__inner {
+  margin: 15px 175px 15px 20px;
+}
+
+.bookblock__about {
+  font-family: Inter;
+  font-size: 15px;
+  line-height: 40px;
+  letter-spacing: 2px;
+  color: #000000;
+  margin-bottom: 15px;
+}
+
+.bookblock__buttom-buy {
+  font-family: Inter;
+  font-size: 10px;
+  font-weight: 700;
+  line-height: 12px;
+  letter-spacing: 1px;
+  text-align: center;
+  padding: 9px 27px;
+  border: 1px solid #0c0c0e;
+}
+
+/* ________________________________________________________________ */
