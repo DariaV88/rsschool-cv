@@ -54,81 +54,300 @@
           <img src="./assets/Welcome.jpg" alt="" />
         </section>
         <section class="about">
-          <div class="about__textblock textblock">
-            <h2 class="about__title title">About</h2>
-            <div class="about__subtitle subtitle">
-              The Brooklyn Library is a free workspace, a large number of books
-              and a cozy coffee shop inside
+          <div class="inner">
+            <div class="about__textblock textblock">
+              <h2 class="about__title title">About</h2>
+              <div class="about__subtitle subtitle">
+                The Brooklyn Library is a free workspace, a large number of
+                books and a cozy coffee shop inside
+              </div>
             </div>
-          </div>
-          <div class="about__slider">
-            <img src="./assets/slider1.jpg" alt="" class="slider img1" />
-            <img src="./assets/slider2.jpg" alt="" class="slider img2" />
-            <img src="./assets/slider3.jpg" alt="" class="slider img3" />
-          </div>
-          <div class="buttons">
-            <button class="slider-buttom slider-buttom--active"></button>
-            <button class="slider-buttom"></button>
-            <button class="slider-buttom"></button>
+            <div class="about__slider">
+              <img src="./assets/slider1.jpg" alt="" class="slider img1" />
+              <img src="./assets/slider2.jpg" alt="" class="slider img2" />
+              <img src="./assets/slider3.jpg" alt="" class="slider img3" />
+            </div>
+            <div class="buttons">
+              <button class="slider-buttom slider-buttom--active"></button>
+              <button class="slider-buttom"></button>
+              <button class="slider-buttom"></button>
+            </div>
           </div>
         </section>
         <section class="favorites">
-          <div class="favorites__textblock">
-            <h2 class="favorites__title title">Favorites</h2>
-            <h3 class="favorites__menu-text">Pick favorites of season</h3>
-            <div class="favorites__menu-list">
-              <label>
-                <input type="radio" class="favorites__menu-item" />Winter
-              </label>
-              <label>
-                <input type="radio" class="favorites__menu-item" />Spring
-              </label>
-              <label>
-                <input type="radio" class="favorites__menu-item" />Summer
-              </label>
-              <label>
-                <input type="radio" class="favorites__menu-item" />Autumn
-              </label>
+          <div class="inner">
+            <div class="favorites__textblock">
+              <h2 class="favorites__title title">Favorites</h2>
+              <h3 class="favorites__menu-text">Pick favorites of season</h3>
+              <div class="favorites__menu-list">
+                <label>
+                  <input type="radio" class="favorites__menu-item" />Winter
+                </label>
+                <label>
+                  <input type="radio" class="favorites__menu-item" />Spring
+                </label>
+                <label>
+                  <input type="radio" class="favorites__menu-item" />Summer
+                </label>
+                <label>
+                  <input type="radio" class="favorites__menu-item" />Autumn
+                </label>
+              </div>
             </div>
-          </div>
-          <div class="favorites__books">
-            <div class="favorites__bookblock bookblock">
-              <div class="bookblock__inner">
-                <h3 class="bookblock__title">Staff Picks</h3>
-                <div class="bookblock__name">
-                  <div class="bookname">The Book Eaters</div>
-                  By Sunyi Dean
+            <div class="favorites__books">
+              <div class="wrapper">
+                <div class="favorites__bookblock bookblock--winter">
+                  <div class="bookblock__inner">
+                    <h3 class="bookblock__title">Staff Picks</h3>
+                    <div class="bookblock__name">
+                      <div class="bookname">The Book Eaters</div>
+                      By Sunyi Dean
+                    </div>
+
+                    <p class="bookblock__about">
+                      An unusual sci-fi story about a book eater woman who tries
+                      desperately to save her dangerous mind-eater son from
+                      tradition and certain death. Complete with dysfunctional
+                      family values, light Sapphic romance, and a strong,
+                      complex protagonist. Not for the faint of heart.
+                    </p>
+                    <div class="button">
+                      <button class="bookblock__button bookblock__button-buy">
+                        Buy
+                      </button>
+                    </div>
+                  </div>
+                  <div class="bookblock__image">
+                    <img src="./assets/favorites/book(0).jpg" alt="" />
+                  </div>
                 </div>
-                <p class="bookblock__about">
-                  An unusual sci-fi story about a book eater woman who tries
-                  desperately to save her dangerous mind-eater son from
-                  tradition and certain death. Complete with dysfunctional
-                  family values, light Sapphic romance, and a strong, complex
-                  protagonist. Not for the faint of heart.
-                </p>
-                <buttom class="bookblock__buttom-buy">Buy</buttom>
-                <div class="bookblock__image">
-                  <img src="./assets/favorites/book(0).jpg" alt="" />
+              </div>
+
+              <div class="wrapper">
+                <div class="favorites__bookblock bookblock--winter">
+                  <div class="bookblock__inner">
+                    <h3 class="bookblock__title">Staff Picks</h3>
+                    <div class="bookblock__name">
+                      <div class="bookname">Cackle</div>
+                      By Rachel Harrison
+                    </div>
+                    <p class="bookblock__about">
+                      Are your Halloween movies of choice The Witches of
+                      Eastwick and Practical Magic? Look no further than here -
+                      where a woman recovering from a breakup moves to a quaint
+                      town in upstate New York and befriends a beautiful witch.
+                    </p>
+                    <button class="bookblock__button bookblock__button-buy">
+                      Buy
+                    </button>
+                    <div class="bookblock__image">
+                      <img src="./assets/favorites/book (1).jpg" alt="" />
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="wrapper">
+                <div class="favorites__bookblock bookblock--winter">
+                  <div class="bookblock__inner">
+                    <h3 class="bookblock__title">Staff Picks</h3>
+                    <div class="bookblock__name">
+                      <div class="bookname">
+                        Dante: Poet of the Secular World
+                      </div>
+                      By Erich Auerbach
+                    </div>
+                    <p class="bookblock__about">
+                      Auerbach's engaging book places the 'Comedy' within the
+                      tradition of epic, tragedy, and philosophy in general,
+                      arguing for Dante's uniqueness as one who raised the
+                      individual and his drama of soul into something of divine
+                      significance—an inspired introduction to Dante's main
+                      themes.
+                    </p>
+                    <button class="bookblock__button bookblock__button-buy">
+                      Buy
+                    </button>
+                    <div class="bookblock__image">
+                      <img src="./assets/favorites/book (2).jpg" alt="" />
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="wrapper">
+                <div class="favorites__bookblock bookblock--winter">
+                  <div class="bookblock__inner">
+                    <h3 class="bookblock__title">Staff Picks</h3>
+                    <div class="bookblock__name">
+                      <div class="bookname">The Last Queen</div>
+                      By Clive Irving
+                    </div>
+                    <p class="bookblock__about">
+                      A timely and revelatory new biography of Queen Elizabeth
+                      (and her family) exploring how the Windsors have evolved
+                      and thrived as the modern world has changed around them.
+                    </p>
+                    <button
+                      disabled
+                      class="bookblock__button bookblock__button--own"
+                    >
+                      Own
+                    </button>
+                    <div class="bookblock__image">
+                      <img src="./assets/favorites/book (3).jpg" alt="" />
+                    </div>
+                  </div>
                 </div>
               </div>
             </div>
-            <div class="favorites__bookblock bookblock">
-              <div class="bookblock__inner">
-                <h3 class="bookblock__title">Staff Picks</h3>
-                <div class="bookblock__name">
-                  <div class="bookname">Cackle</div>
-                  By Sunyi Dean
+          </div>
+        </section>
+        <section class="coffeShop">
+          <div class="inner">
+            <div class="coffeShop__textblock textblock">
+              <h2 class="coffeShop__title title">Coffee shop</h2>
+              <div class="coffeShop__subtitle subtitle">
+                In our library, we have of cozy coffee shop, welcoming in
+                customers with frothy cappuccinos and friendly conversation. you
+                can get a favorite book and read in coffee shop. Our barista to
+                cook you best coffee, and also you can try desserts from bakery.
+              </div>
+            </div>
+            <div class="coffeShop__menu menu">
+              <div class="menu__left">
+                <h3 class="menu__title">Coffee & Tea</h3>
+                <div class="menu__product">
+                  <p class="menu__product-name">Cold Brew Coffee</p>
+                  <hr class="menu__product-line" />
+                  <p class="menu__product-price">$3</p>
                 </div>
-                <p class="bookblock__about">
-                  Are your Halloween movies of choice The Witches of Eastwick
-                  and Practical Magic? Look no further than here - where a woman
-                  recovering from a breakup moves to a quaint town in upstate
-                  New York and befriends a beautiful witch.
-                </p>
-                <buttom class="bookblock__buttom-buy">Buy</buttom>
-                <div class="bookblock__image">
-                  <img src="./assets/favorites/book (1).jpg" alt="" />
+                <div class="menu__product">
+                  <p class="menu__product-name">French Press Pot</p>
+                  <div class="menu__product-line"></div>
+                  <p class="menu__product-price">$5</p>
                 </div>
+                <div class="menu__product">
+                  <p class="menu__product-name">Espresso</p>
+                  <div class="menu__product-line"></div>
+                  <p class="menu__product-price">$2</p>
+                </div>
+                <div class="menu__product">
+                  <p class="menu__product-name">Cappuccino</p>
+                  <div class="menu__product-line"></div>
+                  <p class="menu__product-price">$4</p>
+                </div>
+                <div class="menu__product">
+                  <p class="menu__product-name">Hot tea</p>
+                  <div class="menu__product-line"></div>
+                  <p class="menu__product-price">$2</p>
+                </div>
+                <div class="menu__product">
+                  <p class="menu__product-name">Cold tea</p>
+                  <div class="menu__product-line"></div>
+                  <p class="menu__product-price">$2</p>
+                </div>
+              </div>
+              <div class="menu__right">
+                <h3 class="menu__title menu__title--right">Desserts & Cakes</h3>
+                <div class="menu__product">
+                  <p class="menu__product-name product-name--right">
+                    Forest Gateau
+                  </p>
+                  <hr class="menu__product-line" />
+                  <p class="menu__product-price">$16</p>
+                </div>
+                <div class="menu__product">
+                  <p class="menu__product-name product-name--right">
+                    Blue Moon
+                  </p>
+                  <div class="menu__product-line"></div>
+                  <p class="menu__product-price">$16</p>
+                </div>
+                <div class="menu__product">
+                  <p class="menu__product-name product-name--right">
+                    Truffle Cake
+                  </p>
+                  <div class="menu__product-line"></div>
+                  <p class="menu__product-price">$15</p>
+                </div>
+                <div class="menu__product">
+                  <p class="menu__product-name product-name--right">
+                    Chocolate Cake
+                  </p>
+                  <div class="menu__product-line"></div>
+                  <p class="menu__product-price">$18</p>
+                </div>
+                <div class="menu__product">
+                  <p class="menu__product-name product-name--right">
+                    Poet’s Dream Cake
+                  </p>
+                  <div class="menu__product-line"></div>
+                  <p class="menu__product-price">$16</p>
+                </div>
+                <div class="menu__product">
+                  <p class="menu__product-name product-name--right">
+                    Pineapple Cake
+                  </p>
+                  <div class="menu__product-line"></div>
+                  <p class="menu__product-price">$14</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="contacts">
+          <div class="inner">
+            <div class="contacts__textblock textblock">
+              <h2 class="contacts__title title">Our Contacts</h2>
+            </div>
+            <div class="contacts__blocks">
+              <div class="contacts__textblock">
+                <div class="contacts__textblock-tel">
+                  <h3 class="contacts__textblock-title">
+                    For all Library inquiries:
+                  </h3>
+                  <p class="contacts__textblock-text">
+                    Please call <a href="tel:+(617) 730-2370">(617) 730-2370</a>
+                  </p>
+                  <p class="contacts__textblock-text">
+                    For TTY service, please call
+                    <a href="tel:+(617) 730-2370">(617) 730-2370</a>
+                  </p>
+                  <p class="contacts__textblock-text">
+                    Putterham Library:
+                    <a href="tel:+(617) 730-2385">(617) 730-2385</a>
+                  </p>
+                </div>
+                <div class="contacts__textblock-email">
+                  <h3 class="contacts__textblock-title--mail">Senior Staff</h3>
+                  <p class="contacts__textblock-text">
+                    Library Director:
+                    <a href="mailto:AmandaHirst@gmail.com">Amanda Hirst</a>
+                  </p>
+                </div>
+              </div>
+              <div class="contacts__map">
+                <iframe
+                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3025.0157923695847!2d-73.99387252455969!3d40.6956498386173!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c25a49b61ce303%3A0x16b8007c6dc3dd5!2zMjgwIENhZG1hbiBQbGF6YSBXLCBCcm9va2x5biwgTlkgMTEyMDEsINCh0KjQkA!5e0!3m2!1sru!2sru!4v1689533314367!5m2!1sru!2sru"
+                  width="696"
+                  height="414"
+                  style="border: 0"
+                  allowfullscreen=""
+                  loading="lazy"
+                  referrerpolicy="no-referrer-when-downgrade"
+                ></iframe>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="libraryCard">
+          <div class="inner">
+            <div class="libraryCard__textblock textblock">
+              <h2 class="libraryCard__title title">Digital Library Cards</h2>
+              <div class="libraryCard__blocks">
+                <div class="libraryCard__block"></div>
+                <div class="libraryCard__block"></div>
               </div>
             </div>
           </div>
