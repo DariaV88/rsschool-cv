@@ -17,6 +17,10 @@ ul li {
   list-style: none;
 }
 
+button {
+  background: none;
+}
+
 html,
 body {
   height: 100%;
@@ -48,8 +52,7 @@ h3 {
 }
 
 .footer {
-  height: 80px;
-  background: #000000;
+  background: #0c0c0e;
 }
 
 .inner {
@@ -108,6 +111,12 @@ img {
 /* _________________________________________________________ */
 
 .welcome {
+  background-image: url(../library/assets/Welcome.jpg);
+  min-height: 600px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  text-align: center;
   margin-bottom: 20px;
 }
 
@@ -130,8 +139,17 @@ main {
   color: #0c0c0e;
   font-family: Forum;
   font-size: 40px;
-  margin-bottom: 10px;
-  /* border-bottom: 1px solid #0c0c0e; придумать что-нибудь с чертой */
+}
+
+.title::after {
+  margin: 0 auto;
+  margin-top: 20px;
+  margin-bottom: 40px;
+  background: #0c0c0e;
+  width: 50px;
+  height: 1px;
+  content: " ";
+  display: block;
 }
 
 .subtitle {
@@ -148,20 +166,32 @@ main {
 }
 
 .buttons {
-  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   margin-bottom: 30px;
 }
 
-.slider-buttom {
+.button__inner {
+  position: relative;
+  cursor: pointer;
+  width: 26px;
+  height: 26px;
+}
+
+.slider-button {
+  position: absolute;
   width: 16px;
   height: 16px;
+  top: 25%;
+  left: 25%;
+  z-index: -1;
   background: #000000;
   border-radius: 50px;
   border: none;
 }
-/* сделать что-то с кнопками!!! */
 
-.slider-buttom--active {
+.slider-button--active {
   background: #bb945f;
 }
 
@@ -173,7 +203,15 @@ main {
 
 /* что-то сделать с расстоянием у радиокнопок и активной кнопкой*/
 .favorites__menu-item {
-  padding-left: 10px;
+  padding: 5px;
+}
+
+.input-item {
+  cursor: pointer;
+}
+
+input[type="radio"] {
+  accent-color: #000000;
 }
 
 .favorites__menu-text {
@@ -381,4 +419,162 @@ main {
   justify-content: space-between;
 }
 
+.card__block {
+  border: 3px solid #bb945f;
+}
+
+.card {
+  background: #bb945f;
+  display: flex;
+  flex-direction: column;
+  padding: 20px 20px 25px 20px;
+  margin: 20px;
+}
+
+.card__input {
+  width: 520px;
+  height: 66px;
+  border-radius: 10px;
+  padding: 20px;
+  /* align-items: center; */
+}
+
+.card__input:not(:last-child) {
+  margin-bottom: 25px;
+}
+
+.card__text {
+  font-family: Forum;
+  font-size: 30px;
+  font-weight: 400;
+  line-height: 50px;
+  text-align: left;
+  margin-bottom: 20px;
+}
+
+.card__check {
+  cursor: pointer;
+  font-family: Inter;
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 24px;
+  letter-spacing: 1px;
+  padding: 10px 40px;
+  border: 1px solid #0c0c0e;
+  display: block;
+  margin: 0 auto;
+  margin-bottom: 30px;
+}
+
+::placeholder {
+  font-family: Forum;
+  font-size: 30px;
+  font-weight: 400;
+  line-height: 50px;
+  letter-spacing: 0.02em;
+  color: #8e8e8e;
+}
+
+.libraryCard__block-title {
+  text-align: center;
+  font-family: Inter;
+  font-size: 30px;
+  font-weight: 400;
+  line-height: 36px;
+  letter-spacing: 0.02em;
+  margin-bottom: 30px;
+  align-items: center;
+}
+
+.libraryCard__textblock {
+  margin-bottom: 40px;
+}
+
+.rightBlock {
+  text-align: right;
+}
+
+.rightBlock-btn {
+  border: 1px solid #0c0c0e;
+  font-family: Inter;
+  font-size: 10px;
+  font-weight: 700;
+  line-height: 12px;
+  letter-spacing: 1px;
+  text-align: center;
+  width: 75px;
+  height: 30px;
+  cursor: pointer;
+}
+
+.rightBlock-title {
+  margin-bottom: 35px;
+  font-family: Forum;
+  font-size: 30px;
+  font-weight: 400;
+  line-height: 33px;
+  letter-spacing: 0.02em;
+}
+
+.rightBlock-text {
+  max-width: 456px;
+  font-family: Inter;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 40px;
+  letter-spacing: 0.02em;
+  margin-bottom: 35px;
+}
+
 /* _______________________________________________________ */
+
+.footer__bottom {
+  display: flex;
+  justify-content: space-between;
+}
+
+.bottom__text {
+  font-family: Inter;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 20px;
+  letter-spacing: 2px;
+  color: #ffffff;
+}
+
+/* _______________________________________________ */
+
+.footer__top {
+  color: #ffffff;
+  /* margin-bottom: 30px; */
+  font-family: Inter;
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 20px;
+  letter-spacing: 0em;
+}
+
+.top__top {
+  margin-bottom: 10px;
+}
+
+.top {
+  display: flex;
+  justify-content: space-between;
+}
+
+.footer__top::after {
+  margin-top: 30px;
+  margin-bottom: 44px;
+  content: "";
+  border: 1px solid #ffffff;
+  display: block;
+}
+
+.social__icon:not(:last-child) {
+  margin-right: 15px;
+}
+
+.schedule {
+  text-align: right;
+}

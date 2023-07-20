@@ -25,19 +25,19 @@
             <nav class="header__menu menu">
               <ul class="menu__list">
                 <li class="menu__item">
-                  <a href="" class="menu__link">About</a>
+                  <a href="#about" class="menu__link">About</a>
                 </li>
                 <li class="menu__item">
-                  <a href="" class="menu__link">Favorites</a>
+                  <a href="#favorites" class="menu__link">Favorites</a>
                 </li>
                 <li class="menu__item">
-                  <a href="" class="menu__link">Favorites</a>
+                  <a href="#coffeeShop" class="menu__link">Coffee Shop</a>
                 </li>
                 <li class="menu__item">
-                  <a href="" class="menu__link">Contacts</a>
+                  <a href="#contacts" class="menu__link">Contacts</a>
                 </li>
                 <li class="menu__item">
-                  <a href="" class="menu__link">Library Card</a>
+                  <a href="#libraryCard" class="menu__link">Library Card</a>
                 </li>
               </ul>
             </nav>
@@ -50,39 +50,50 @@
         </div>
       </header>
       <main class="main">
-        <section class="welcome">
-          <img src="./assets/Welcome.jpg" alt="" />
-        </section>
-        <section class="about">
-          <div class="inner">
-            <div class="about__textblock textblock">
-              <h2 class="about__title title">About</h2>
-              <div class="about__subtitle subtitle">
-                The Brooklyn Library is a free workspace, a large number of
-                books and a cozy coffee shop inside
+        <section class="welcome"></section>
+        <section class="about" id="about">
+          <div class="container">
+            <div class="inner">
+              <div class="about__textblock textblock">
+                <h2 class="about__title title">About</h2>
+                <div class="about__subtitle subtitle">
+                  The Brooklyn Library is a free workspace, a large number of
+                  books and a cozy coffee shop inside
+                </div>
               </div>
-            </div>
-            <div class="about__slider">
-              <img src="./assets/slider1.jpg" alt="" class="slider img1" />
-              <img src="./assets/slider2.jpg" alt="" class="slider img2" />
-              <img src="./assets/slider3.jpg" alt="" class="slider img3" />
-            </div>
-            <div class="buttons">
-              <button class="slider-buttom slider-buttom--active"></button>
-              <button class="slider-buttom"></button>
-              <button class="slider-buttom"></button>
+              <div class="about__slider">
+                <img src="./assets/slider1.jpg" alt="" class="slider img1" />
+
+                <img src="./assets/slider2.jpg" alt="" class="slider img2" />
+
+                <img src="./assets/slider3.jpg" alt="" class="slider img3" />
+              </div>
+              <div class="buttons">
+                <div class="button__inner">
+                  <button class="slider-button slider-button--active"></button>
+                </div>
+                <div class="button__inner">
+                  <button class="slider-button"></button>
+                </div>
+                <div class="button__inner">
+                  <button class="slider-button"></button>
+                </div>
+              </div>
             </div>
           </div>
         </section>
-        <section class="favorites">
+        <section class="favorites" id="favorites">
           <div class="inner">
             <div class="favorites__textblock">
               <h2 class="favorites__title title">Favorites</h2>
               <h3 class="favorites__menu-text">Pick favorites of season</h3>
               <div class="favorites__menu-list">
                 <label>
-                  <input type="radio" class="favorites__menu-item" />Winter
+                  <div class="input-item">
+                    <input type="radio" class="favorites__menu-item" />
+                  </div>
                 </label>
+
                 <label>
                   <input type="radio" class="favorites__menu-item" />Spring
                 </label>
@@ -203,7 +214,7 @@
             </div>
           </div>
         </section>
-        <section class="coffeShop">
+        <section class="coffeeShop" id="coffeeShop">
           <div class="inner">
             <div class="coffeShop__textblock textblock">
               <h2 class="coffeShop__title title">Coffee shop</h2>
@@ -296,7 +307,7 @@
             </div>
           </div>
         </section>
-        <section class="contacts">
+        <section class="contacts" id="contacts">
           <div class="inner">
             <div class="contacts__textblock textblock">
               <h2 class="contacts__title title">Our Contacts</h2>
@@ -341,19 +352,80 @@
             </div>
           </div>
         </section>
-        <section class="libraryCard">
+        <section class="libraryCard" id="libraryCard">
           <div class="inner">
             <div class="libraryCard__textblock textblock">
               <h2 class="libraryCard__title title">Digital Library Cards</h2>
-              <div class="libraryCard__blocks">
-                <div class="libraryCard__block"></div>
-                <div class="libraryCard__block"></div>
+            </div>
+            <div class="libraryCard__blocks">
+              <div class="libraryCard__block">
+                <p class="libraryCard__block-title">Find your Library card</p>
+                <div class="card__block">
+                  <form action="" class="card">
+                    <p class="card__text">Brooklyn Public Library</p>
+                    <input
+                      type="text"
+                      class="card__input"
+                      placeholder="Reader's name"
+                    />
+                    <input
+                      type="text"
+                      class="card__input"
+                      placeholder="Card number"
+                    />
+                  </form>
+                  <button class="card__check">Check the card</button>
+                </div>
+              </div>
+              <div class="libraryCard__block rightBlock">
+                <p class="rightBlock-title">Get a reader card</p>
+                <p class="rightBlock-text">
+                  You will be able to see a reader card after logging into
+                  account or you can register a new account
+                </p>
+                <button class="rightBlock-btn">Sign Up</button>
+                <button class="rightBlock-btn">Log in</button>
               </div>
             </div>
           </div>
         </section>
       </main>
-      <footer class="footer"></footer>
+      <footer class="footer">
+        <div class="inner">
+          <div class="footer__top">
+            <div class="top__top top">
+              <a class="top__top-address">
+                286 Cadman Plaza, New York, <br />
+                NY 11238, United States
+              </a>
+              <p class="top__top-schedule schedule">
+                Mon - Fri <br />08:00 am - 07:00 pm
+              </p>
+            </div>
+            <div class="top__buttom top">
+              <div class="top__buttom-social">
+                <a href="https://twitter.com/nypl" class="social__icon">
+                  <img src="./assets/twitter.svg" alt="twitter" />
+                </a>
+                <a href="https://www.instagram.com/nypl/" class="social__icon">
+                  <img src="./assets/inst.svg" alt="inst" />
+                </a>
+                <a href="https://www.facebook.com/nypl/" class="social__icon">
+                  <img src="./assets/facebook.svg" alt="facebook" />
+                </a>
+              </div>
+              <p class="top__buttom-schedule schedule">
+                Sat - Sun <br />10:00 am - 06:00 pm
+              </p>
+            </div>
+          </div>
+          <div class="footer__bottom bottom">
+            <p class="bottom__text">2023</p>
+            <p class="bottom__text">The Rolling Scopes School</p>
+            <a href="" class="bottom__text">Daria&&&&&&&&</a>
+          </div>
+        </div>
+      </footer>
     </div>
   </body>
 </html>
