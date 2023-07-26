@@ -23,20 +23,13 @@ button {
 
 html,
 body {
+  scroll-behavior: smooth;
   height: 100%;
   font-family: Inter;
   line-height: 40px;
   letter-spacing: 2px;
   font-size: 20px;
   font-weight: 400;
-}
-
-h1,
-h2,
-h3 {
-  font-weight: inherit;
-  font-size: inherit;
-  font-family: inherit;
 }
 
 .container {
@@ -56,7 +49,7 @@ h3 {
 }
 
 .inner {
-  margin: 20px 20px 40px 20px;
+  margin: 0px 20px 20px 20px;
 }
 
 img {
@@ -81,20 +74,31 @@ img {
 
 .menu__list {
   display: flex;
-  justify-content: space-between;
+  align-items: center;
+}
+
+.menu__link {
+  font-family: Inter;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 50px;
+  letter-spacing: 0em;
 }
 
 .icon {
-  margin: 34px 26px 29px 40px;
+  margin: 31px 20px 31px 40px;
 }
 
 .menu__item:not(:last-child) {
   margin-right: 30px;
 }
 
+.menu__item:hover {
+  text-decoration: underline;
+}
+
 .header__right {
   display: flex;
-  justify-content: space-between;
   align-items: center;
 }
 
@@ -111,22 +115,38 @@ img {
 /* _________________________________________________________ */
 
 .welcome {
-  background-image: url(../library/assets/Welcome.jpg);
   min-height: 600px;
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
   text-align: center;
   margin-bottom: 20px;
+  background: linear-gradient(
+      180deg,
+      #0c0c0e 0%,
+      #0c0c0e 0.01%,
+      rgba(18, 18, 21, 0.1) 100%
+    ),
+    url(../library/assets/welcome-1440.jpg);
 }
 
-/* __________________________________________________________ */
+.welcome__block {
+  position: absolute;
+  background: #0c0c0e;
+  margin-top: 220px;
+  max-width: 600px;
+}
 
-main {
-  background-image: url();
-  background-repeat: no-repeat;
-  background-position: top center;
-  background-size: cover;
+.welcome__title {
+  padding: 35px 40px;
+  font-family: Forum;
+  font-size: 40px;
+  font-weight: 400;
+  line-height: 50px;
+  letter-spacing: 3px;
+  text-align: center;
+  color: #ffffff;
+  text-transform: uppercase;
 }
 
 /* ___________________________________________________________ */
@@ -154,7 +174,12 @@ main {
 
 .subtitle {
   color: #000000;
-  margin-top: 50px;
+  font-family: Inter;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 40px;
+  letter-spacing: 0em;
+  text-align: center;
 }
 
 /* ____________________________________________________________ */
@@ -187,7 +212,7 @@ main {
   left: 25%;
   z-index: -1;
   background: #000000;
-  border-radius: 50px;
+  border-radius: 50%;
   border: none;
 }
 
@@ -201,35 +226,57 @@ main {
   text-align: center;
 }
 
-/* что-то сделать с расстоянием у радиокнопок и активной кнопкой*/
-.favorites__menu-item {
-  padding: 5px;
+.label__radio {
+  cursor: pointer;
+  padding: 5px 5px;
 }
 
-.input-item {
-  cursor: pointer;
+.favorites__menu-item {
+  margin-right: 20px;
+  color: #000000;
+  width: 17px;
+  height: 17px;
 }
 
 input[type="radio"] {
+  color: #000000;
   accent-color: #000000;
 }
 
 .favorites__menu-text {
   margin-bottom: 40px;
+  font-family: Inter;
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 24px;
+  letter-spacing: 0em;
 }
 
 .favorites__menu-list {
   max-width: 700px;
   display: flex;
   justify-content: space-between;
-  margin-bottom: 40px;
+  align-items: center;
+  margin-bottom: 35px;
+  font-family: Inter;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 24.2px;
+  letter-spacing: 0em;
 }
 
+/* ______________________ */
+
 .favorites__books {
-  margin-bottom: 40px;
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
+}
+
+.favorites__books--spring,
+.favorites__books--summer,
+.favorites__books--autumn {
+  display: none;
 }
 
 .favorites__bookblock {
@@ -238,7 +285,7 @@ input[type="radio"] {
   border: 1px solid #000000;
 }
 
-.wrapper {
+.bookblock__wrapper {
   width: 590px;
   height: 555px;
   margin-bottom: 40px;
@@ -253,6 +300,8 @@ input[type="radio"] {
 
 .bookblock__title {
   font-family: Forum;
+  font-size: 20px;
+  font-weight: 400;
   line-height: 40px;
   letter-spacing: 2px;
   position: relative;
@@ -274,6 +323,7 @@ input[type="radio"] {
   font-weight: 700;
   line-height: 40px;
   letter-spacing: 2px;
+  margin-top: 20px;
   margin-bottom: 20px;
 }
 
@@ -282,11 +332,12 @@ input[type="radio"] {
 }
 
 .bookblock__inner {
-  margin: 15px 172px 15px 20px;
-  /* сделать здесь что-то с марджином, который должен быть 175 */
+  margin-top: 15px;
+  margin-left: 20px;
 }
 
 .bookblock__about {
+  max-width: 355px;
   text-transform: capitalize;
   font-family: Inter;
   font-size: 15px;
@@ -302,7 +353,7 @@ input[type="radio"] {
   font-family: Inter;
   font-size: 10px;
   font-weight: 700;
-  line-height: 12px;
+  line-height: 12.1px;
   letter-spacing: 1px;
   text-align: center;
   padding: 9px 27px;
@@ -310,17 +361,29 @@ input[type="radio"] {
   background: #ffffff;
 }
 
-.bookblock__button-buy:hover {
+.bookblock__button--own {
+  color: #bb945f;
+  border: 1px solid #bb945f;
+}
+
+.bookblock__button-buy:hover,
+.btn:hover {
   background: #bb945f;
   cursor: pointer;
+  transition: 0.2s ease;
 }
 
 /* ________________________________________________________________ */
 
 .coffeShop__menu {
   margin-top: 40px;
+  margin-bottom: 40px;
   display: flex;
   justify-content: space-between;
+}
+
+.coffeShop__subtitle {
+  letter-spacing: 2px;
 }
 
 .menu__left {
@@ -389,13 +452,19 @@ input[type="radio"] {
 .contacts__textblock-title {
   margin-bottom: 40px;
   font-family: Inter;
+  font-size: 20px;
   font-weight: 700;
+  line-height: 40px;
+  letter-spacing: 2px;
 }
 
 .contacts__textblock-title--mail {
   margin-bottom: 20px;
   font-family: Inter;
+  font-size: 20px;
   font-weight: 700;
+  line-height: 40px;
+  letter-spacing: 2px;
 }
 
 .contacts__textblock-text:not(:last-child) {
@@ -407,9 +476,9 @@ input[type="radio"] {
 }
 
 .contacts__blocks {
+  margin-bottom: 40px;
   display: flex;
   justify-content: space-between;
-  margin-top: 40px;
 }
 
 /* ________________________________________________________ */
@@ -417,6 +486,7 @@ input[type="radio"] {
 .libraryCard__blocks {
   display: flex;
   justify-content: space-between;
+  margin-bottom: 40px;
 }
 
 .card__block {
@@ -448,6 +518,7 @@ input[type="radio"] {
   font-size: 30px;
   font-weight: 400;
   line-height: 50px;
+  letter-spacing: 0.02em;
   text-align: left;
   margin-bottom: 20px;
 }
@@ -495,6 +566,7 @@ input[type="radio"] {
 }
 
 .rightBlock-btn {
+  margin-top: 35px;
   border: 1px solid #0c0c0e;
   font-family: Inter;
   font-size: 10px;
@@ -505,6 +577,10 @@ input[type="radio"] {
   width: 75px;
   height: 30px;
   cursor: pointer;
+}
+
+.rightBlock-btn:last-child {
+  margin-left: 15px;
 }
 
 .rightBlock-title {
@@ -523,7 +599,6 @@ input[type="radio"] {
   font-weight: 400;
   line-height: 40px;
   letter-spacing: 0.02em;
-  margin-bottom: 35px;
 }
 
 /* _______________________________________________________ */
@@ -531,6 +606,7 @@ input[type="radio"] {
 .footer__bottom {
   display: flex;
   justify-content: space-between;
+  margin-bottom: 44px;
 }
 
 .bottom__text {
@@ -546,7 +622,7 @@ input[type="radio"] {
 
 .footer__top {
   color: #ffffff;
-  /* margin-bottom: 30px; */
+  margin-top: 20px;
   font-family: Inter;
   font-size: 15px;
   font-weight: 400;
@@ -556,6 +632,7 @@ input[type="radio"] {
 
 .top__top {
   margin-bottom: 10px;
+  align-items: center;
 }
 
 .top {
@@ -569,6 +646,14 @@ input[type="radio"] {
   content: "";
   border: 1px solid #ffffff;
   display: block;
+}
+
+.top__buttom {
+  align-items: center;
+}
+
+.social__icon {
+  color: #f5efdb;
 }
 
 .social__icon:not(:last-child) {
